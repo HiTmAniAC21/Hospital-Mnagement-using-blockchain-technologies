@@ -1,0 +1,226 @@
+{
+	"compiler": {
+		"version": "0.5.1+commit.c8a2cb62"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "requester",
+						"type": "string"
+					},
+					{
+						"name": "patientKey",
+						"type": "string"
+					}
+				],
+				"name": "isAuthorized",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "getUserType",
+				"outputs": [
+					{
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "checkNextRegistry",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "user",
+						"type": "string"
+					},
+					{
+						"name": "patientKey",
+						"type": "string"
+					},
+					{
+						"name": "recordIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "getThisHealthRecord",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "addrString",
+						"type": "string"
+					}
+				],
+				"name": "registerPatient",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "user",
+						"type": "string"
+					},
+					{
+						"name": "providerKey",
+						"type": "string"
+					}
+				],
+				"name": "authorizeProvider",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "addrString",
+						"type": "string"
+					}
+				],
+				"name": "registerProvider",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "user",
+						"type": "string"
+					},
+					{
+						"name": "patientKey",
+						"type": "string"
+					},
+					{
+						"name": "phi",
+						"type": "string"
+					}
+				],
+				"name": "addHealthRecord",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "returnValue",
+						"type": "bool"
+					}
+				],
+				"name": "checkRegistry",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "uType",
+						"type": "int256"
+					}
+				],
+				"name": "userType",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "data",
+						"type": "string"
+					}
+				],
+				"name": "getRecord",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "access",
+						"type": "string"
+					}
+				],
+				"name": "checkAccess",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/arts.sol": "MedicalBlock"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/arts.sol": {
+			"keccak256": "0x40c7faf2e5e7c16adf2b3835a531ab6bb7028cc491fd4e1803b300ba29cd2316",
+			"urls": [
+				"bzzr://15ca8f1c258ff33cc1eb2c6ff48cccb1c4ddeb8e719bca5c0a28f2af3e0e6b4a"
+			]
+		}
+	},
+	"version": 1
+}
